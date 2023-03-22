@@ -3,8 +3,11 @@ const container = document.querySelector(".model-container");
 const plant = document.querySelector("#plant");
 
 plant.addEventListener("click",()=>{
-  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/office_chair.glb?v=1679465307574',
-                   'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/office_chair.glb?v=1679465307574'];
+  
+  container.innerHTML = "";
+  
+  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/cannabis_plant..glb?v=1679468487336'];
+  
   for(let i = 0 ; i < modelUrl.length; i++){
     
   const card = document.createElement("div");
