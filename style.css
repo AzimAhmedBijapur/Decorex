@@ -25,7 +25,6 @@ header{
   list-style-type:none;
   font-size:calc(5px + 1rem);
   color:blueviolet;
-  cursor:pointer;
 }
 .model-container{
   display:flex;
@@ -45,4 +44,29 @@ header{
 }
 .card model-viewer{
   height:200px;
+}
+main{
+  
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  position:fixed;
+  bottom:0px;
+  align-items:center;
+  width:100%;
+  margin-top:40px;
+}
+.dev{
+  letter-spacing:3px;
+}
+.copyright{
+  display:flex;
+  background-color:black;
+  width:100%;
+  color:white;
+  height:50px;
+  align-items:center;
+  justify-content:center;
 }
