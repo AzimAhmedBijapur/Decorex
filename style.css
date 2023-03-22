@@ -1,5 +1,6 @@
 body{
   margin:0px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
   display:flex;
@@ -7,17 +8,24 @@ header{
   color:white;
   height:calc(50px + 1vh);
   align-items:center;
-  padding-left:4px
+  padding-left:4px;
+  gap:10px;
+  font-size:calc(10px + 1rem)
 }
 .try-on{
   margin-left:10px;
   margin-top:10px;
+  font-size:calc(8px + 1rem);
+  font-weight:bold;
 }
 .models{
   display:flex;
   flex-direction:column;
   gap:10px;
   list-style-type:none;
+  font-size:calc(5px + 1rem);
+  color:blueviolet;
+  cursor:pointer;
 }
 .model-container{
   display:flex;
