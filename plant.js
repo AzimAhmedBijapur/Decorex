@@ -6,7 +6,7 @@ plant.addEventListener("click",()=>{
   
   container.innerHTML = "";
   
-  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/cannabis_plant..glb?v=1679468487336'];
+  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/free_pothos_potted_plant_-_money_plant.glb?v=1679468824610'];
   
   for(let i = 0 ; i < modelUrl.length; i++){
     
