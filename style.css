@@ -20,10 +20,21 @@ header{
   list-style-type:none;
 }
 .models-grid{
-  display:
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 .card{
   display:flex;
+  flex-direction:column;
   box-shadow: 4px 4px 4px 4px lightgrey;
+  width:80%;
+  height:300px;
+  padding:5px;
+  align-items:center;
+  gap:20px
+}
+.card model-viewer{
   height:200px;
+  border:2px solid lightgrey;
 }
