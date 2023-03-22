@@ -19,6 +19,6 @@ table.addEventListener("click",()=>{
   model.setAttribute('ar-modes','scene-viewer');
 
   card.appendChild(model);
-  container.appendChild(card);
+  containerT.appendChild(card);
   }
 })

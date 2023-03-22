@@ -1,13 +1,12 @@
-const container = document.querySelector(".model-container");
+const containerS = document.querySelector(".model-container");
 
 const sofa = document.querySelector("#sofa");
 
 sofa.addEventListener("click",()=>{
   
-  container.innerHTML = "";
+  containerS.innerHTML = "";
   
-  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/office_chair.glb?v=1679465307574',
-                   'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/office_chair.glb?v=1679465307574'];
+  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa.glb?v=1679469484604'];
   for(let i = 0 ; i < modelUrl.length; i++){
     
   const card = document.createElement("div");
@@ -20,6 +19,6 @@ sofa.addEventListener("click",()=>{
   model.setAttribute('ar-modes','scene-viewer');
 
   card.appendChild(model);
-  container.appendChild(card);
+  containerS.appendChild(card);
   }
 })
