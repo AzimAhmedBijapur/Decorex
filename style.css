@@ -3,9 +3,27 @@ body{
 }
 header{
   display:flex;
-  justify-content:center;
   background-color:black;
   color:white;
   height:calc(50px + 1vh);
   align-items:center;
+  padding-left:4px
+}
+.try-on{
+  margin-left:10px;
+  margin-top:10px;
+}
+.models{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  list-style-type:none;
+}
+.models-grid{
+  display:
+}
+.card{
+  display:flex;
+  box-shadow: 4px 4px 4px 4px lightgrey;
+  height:200px;
 }
