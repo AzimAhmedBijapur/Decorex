@@ -3,4 +3,10 @@
   justify-content:center;
   align-items:center;
   height:100vh;
+  flex-direction:column;
+  gap:40px
+}
+.credit{
+  width:80px;
+  text-align:center;
 }

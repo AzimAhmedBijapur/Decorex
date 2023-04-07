@@ -72,3 +72,8 @@ main{
   align-items:center;
   justify-content:center;
 }
+.dropdown{
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left:40px;
+}
