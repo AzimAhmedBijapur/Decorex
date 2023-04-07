@@ -39,7 +39,8 @@ header{
   display:flex;
   flex-direction:column;
   box-shadow: 4px 4px 4px 4px lightgrey;
-  width:80%;
+  width:calc(200px + 15vw);
+  height:auto;
   padding:5px;
   align-items:center;
   gap:20px

@@ -16,7 +16,7 @@ floor.addEventListener("click",()=>{
   model.setAttribute('ar','ar');
   model.setAttribute('camera-controls','camera-controls');
   model.setAttribute('touch-action','pan-y');
-  model.setAttribute('ar-modes','scene-viewer');
+  model.setAttribute('ar-modes','webxr');
 
   card.appendChild(model);
   containerF.appendChild(card);
