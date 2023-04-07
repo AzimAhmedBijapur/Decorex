@@ -9,6 +9,10 @@
 .credit{
   width:90px;
   text-align:center;
-  line-height:30px;
+  line-height:25px;
   font-family:monospace;
+}
+.signIn img{
+  height:150px;
+  width:auto;
 }
