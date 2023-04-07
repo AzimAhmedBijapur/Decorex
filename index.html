@@ -4,60 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/view.png?v=1679463953089" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Decorex</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/plant.js" defer></script>
-    <script src="/table.js" defer></script>
-    <script src="/sofa.js" defer></script>
-    <script src="/floor.js" defer></script>
-    <script src="/chair.js" defer></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   </head>
   <body>
-    <header>
-      <img src="https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/furniture.png?v=1679464248352">
-      <div>
-        Decorex
-      </div>
-    </header>
-    <main>
-      <div class="try-on">
-        Try On
-      </div>
-      <div>
-        <ul class="models">
-          <li id="chair">Chair</li>
-          <li id="sofa">Sofa</li>
-          <li id="table">Table</li>
-          <li id="floor">Floor</li>
-          <li id="plant">Plants</li>
-        </ul>
-      </div>
-      <div class="model-container">
-        <div class="card">
-          <model-viewer src="https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/office_chair.glb?v=1679465307574" 
-                        shadow-intensity="1" 
-                        ar camera-controls 
-                        touch-action="pan-y"
-                        ar-modes="scene-viewer"
-                        alt="#">
-          </model-viewer>
-        </div>
-        <div class="card">
-          <model-viewer src="https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/ofiice-chair-2.glb?v=1679471498876" 
-                        shadow-intensity="1" 
-                        ar camera-controls 
-                        touch-action="pan-y"
-                        ar-modes="scene-viewer"
-                        alt="#">
-          </model-viewer>
-        </div>
-      </div>
+    <main class="signIn">
+      <button type="button" class="btn btn-primary btn-lg">Sign in</button>
     </main>
-    <footer>
-      <div class="copyright">
-        Copyright 2023
-      </div>
-    </footer>
   </body>
 </html>
