@@ -13,6 +13,9 @@ header{
   gap:10px;
   font-size:calc(10px + 1rem)
 }
+header img{
+  height:calc(1rem + 1vh);
+}
 .try-on{
   margin-left:10px;
   margin-top:10px;
@@ -39,7 +42,7 @@ header{
   display:flex;
   flex-direction:column;
   box-shadow: 4px 4px 4px 4px lightgrey;
-  width:calc(200px + 15vw);
+  width:calc(300px + 15vw); /****/
   height:auto;
   padding:5px;
   align-items:center;

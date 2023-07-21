@@ -6,7 +6,7 @@ sofa.addEventListener("click",()=>{
   
   containerS.innerHTML = "";
   
-  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa.glb?v=1679469484604',
+  const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa.glb?v=1680872130341',
                    'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa_chair.glb?v=1679470485343',
                    'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/white_sofa.glb?v=1680859461460'];
   for(let i = 0 ; i < modelUrl.length; i++){
