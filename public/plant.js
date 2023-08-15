@@ -5,7 +5,7 @@ const plant = document.querySelector("#plant");
 plant.addEventListener("click",()=>{
   
   container.innerHTML = "";
-  
+  const titles = ['money plant','dwarf cavendish']
   const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/free_pothos_potted_plant_-_money_plant.glb?v=1679468824610',
                    'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/stylized_flower_pot.glb?v=1680861056260'];
   
@@ -19,8 +19,15 @@ plant.addEventListener("click",()=>{
   model.setAttribute('camera-controls','camera-controls');
   model.setAttribute('touch-action','pan-y');
   model.setAttribute('ar-modes','webxr');
+  const title = document.createElement('div');
+  title.className = 'card-body p-0 mt-2';
+  const head = document.createElement('h5');
+  head.className = 'card-title';
+  head.innerText = titles[i];
+  title.appendChild(head);
 
   card.appendChild(model);
-  container.appendChild(card);
+  card.appendChild(title);
+  containerS.appendChild(card);
   }
 })

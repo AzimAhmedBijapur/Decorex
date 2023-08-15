@@ -5,6 +5,8 @@ const sofa = document.querySelector("#sofa");
 sofa.addEventListener("click",()=>{
   
   containerS.innerHTML = "";
+
+  const titles = ['velvet sofa','club sofa','chaise lounge']
   
   const modelUrl = ['https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa.glb?v=1680872130341',
                    'https://cdn.glitch.global/7ede3348-1731-4eff-be67-e4d544bd7626/sofa_chair.glb?v=1679470485343',
@@ -19,8 +21,15 @@ sofa.addEventListener("click",()=>{
   model.setAttribute('camera-controls','camera-controls');
   model.setAttribute('touch-action','pan-y');
   model.setAttribute('ar-modes','webxr');
+  const title = document.createElement('div');
+  title.className = 'card-body p-0 mt-2';
+  const head = document.createElement('h5');
+  head.className = 'card-title';
+  head.innerText = titles[i];
+  title.appendChild(head);
 
   card.appendChild(model);
+  card.appendChild(title);
   containerS.appendChild(card);
   }
 })
