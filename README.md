@@ -2,7 +2,7 @@
 Interior décor using web based AR 
 # Link 
 ( In order to view in AR you need to have Google ARCore SDK installed in your mobile )
-https://interior-decor-using-ar-7723f.web.app/
+https://interior-decor-using-ar-7723f.web.app/ Currently service is shutdown.
 # Technology used
 1. Google model viewer web component
 2. Firebase
