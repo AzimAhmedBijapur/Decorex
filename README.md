@@ -3,7 +3,7 @@ Welcome to our Interior Decor Web App with Augmented Reality (AR) features! This
 
 ## Deployment Link 
 ( In order to view in AR you need to have Google ARCore SDK installed in your mobile )
-https://interior-decor-using-ar-7723f.web.app/
+https://decorex-a80d5.web.app/
 
 ## Technology used
 - Google model viewer web component
