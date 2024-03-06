@@ -13,7 +13,47 @@
   <link rel="stylesheet" href="./sign-style.css">
   <script src="./sign.js"></script>
   <title>Decorex</title>
+  <script type="module">
 
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAAqQ1p7tqfWXm597gXK0g1lFcmQBYBaRI",
+      authDomain: "decorex-a80d5.firebaseapp.com",
+      projectId: "decorex-a80d5",
+      storageBucket: "decorex-a80d5.appspot.com",
+      messagingSenderId: "385003038477",
+      appId: "1:385003038477:web:585fb013e6d15a2274f244",
+      measurementId: "G-MVTBL1VCH4"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    const signIn = document.querySelector('.signIn');
+
+    signIn.addEventListener('click', function () {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          window.location.assign('./home.html');
+
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.customData.email;
+          const credential = GoogleAuthProvider.credentialFromError(error);
+
+          console.error(error);
+        });
+    })
+  </script>
 </head>
 
 <body>
